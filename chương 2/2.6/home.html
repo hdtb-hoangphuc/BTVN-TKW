@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Website - Các thiết bị máy tính</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container chính */
+        #container {
+            width: 1000px;
+            margin: 0 auto;
+            min-height: 600px;
+            background-color: #f0f8ff;
+            border: 1px solid #ccc;
+        }
+
+        /* Header */
+        header {
+            background-color: #ffffff;
+            height: 150px;
+            position: relative;
+            padding: 20px;
+            text-align: left;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        header img {
+            margin: 5px;
+        }
+
+        /* Menu ngang */
+        nav {
+            height: 50px;
+            background-color: #00381b;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #fff;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #ff9317;
+            border-radius: 5px;
+        }
+        nav img {
+            margin-right: 10px;
+        }
+
+        /* Content chính */
+        #content {
+            background-color: #91aa62;
+            min-height: 400px;
+            padding: 20px;
+            color: #ffffff;
+            font-size: 16px;
+            float: left;
+            width: 67%;
+        }
+
+        /* Menu phải */
+        #right {
+            background-color: #5254e0;
+            min-height: 400px;
+            padding: 20px;
+            color: #fff;
+            font-size: 16px;
+            float: right;
+            width: 25%;
+        }
+
+        /* Footer */
+        footer {
+            clear: both;
+            background-color: #fff;
+            color: #333;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <!-- Thùng chứa -->
+    <div id="container">
+        <!-- Header -->
+        <header>
+            CÁC DỤNG CỤ PHONG THỦY
+            <div style="position: absolute; top: 10px; right: 10px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8c7kILonvbpSv2Y0BgKkwelbDeGBngBXD3A&s" width="32" height="32" alt="Facebook">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIdWgVkwApuIUr0zX6IptdG36nOPHmjw6scQ&s" width="35" height="32" alt="Google Plus">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiV_pf4k2nJsnkM0LcQ5KC6ViYS0RULu_jtg&s" width="32" height="32" alt="YouTube">
+            </div>
+        </header>
+
+        <!-- Menu ngang -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Site Map</a></li>
+            </ul>
+            <img src="images/vi.gif" width="24" height="24" alt="VI">
+        </nav>
+
+        <!-- Nội dung chính -->
+        <div id="content">
+            <h2>Chào mừng bạn đến với website của chúng tôi!</h2>
+            <p>Đây là nơi giới thiệu và cung cấp các loại đồ phong thủy vô cùng linh nghiệm. Chúng tôi cam kết mang đến sản phẩm chất lượng và dịch vụ tốt nhất.</p>
+            <p>Nếu bạn muốn biết thêm chi tiết sản phảm hãy nhấn vào <a href="menuproducts.html" style="color: #e5ff00; text-decoration: underline;">danh sách sản phẩm</a> để hiểu hơn cùng như tìm được sản phẩm phù hợp.</p>
+        </div>
+
+        <!-- Menu phải -->
+        <div id="right">
+            <h3>Danh mục</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li>- la bàn phong thủy</li>
+                <li>- kiếm gỗ đào</li>
+                <li>- chuông phong thủy</li>
+                <li>- phụ kiện phong thủy kèm theo</li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            Bản quyền &copy; 2024 - Thuộc về HIENLTH&reg;
+        </footer>
+    </div>
+</body>
+</html>

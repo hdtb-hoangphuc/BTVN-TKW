@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm Tra Năm Nhuận và Số Ngày Của Tháng</title>
+    <script>
+        
+        function kiemTraNamNhuan() {
+           
+            let nam = parseInt(prompt("Nhập vào năm cần kiểm tra:"));
+           
+            let isLeapYear = (nam % 4 === 0 && nam % 100 !== 0) || (nam % 400 === 0);
+            if (isLeapYear) {
+                alert(nam + " là năm nhuận.");
+            } else {
+                alert(nam + " không phải là năm nhuận.");
+            }
+            let thang = parseInt(prompt("Nhập vào tháng cần kiểm tra (1-12):"));
+            let soNgay;
+            if (thang === 1 || thang === 3 || thang === 5 || thang === 7 || thang === 8 || thang === 10 || thang === 12) {
+                soNgay = 31;
+            } else if (thang === 4 || thang === 6 || thang === 9 || thang === 11) {
+                soNgay = 30;
+            } else if (thang === 2) {
+                soNgay = isLeapYear ? 29 : 28;
+            } else {
+                alert("Tháng không hợp lệ! Vui lòng nhập tháng từ 1 đến 12.");
+                return;
+            }
+            alert("Tháng " + thang + " năm " + nam + " có " + soNgay + " ngày.");
+        }
+    </script>
+</head>
+<body>
+    <h1>Kiểm Tra Năm Nhuận và Số Ngày Của Tháng</h1>
+    <button onclick="kiemTraNamNhuan()">Kiểm Tra</button>
+</body>
+</html>
